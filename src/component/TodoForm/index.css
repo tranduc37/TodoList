@@ -1,0 +1,15 @@
+.todoForm {
+  margin: 2rem auto;
+  text-align: center;
+}
+.todoForm_input {
+  width: 300px;
+  padding: 0.5rem;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.todoForm_submit {
+  padding: 0.5rem;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
