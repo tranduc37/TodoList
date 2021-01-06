@@ -1,0 +1,9 @@
+.toggleTheme {
+  max-width: 100px;
+  margin: 0.5rem auto;
+}
+.toggleTheme__button {
+  width: 100%;
+  background-color: #8e8ca7;
+  outline: none;
+}

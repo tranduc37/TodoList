@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import {TodoContext} from '../../context/todoContext';
 import './index.css';
 import {v4 as uuidv4} from 'uuid';
 
-export default ({addTodo}) => {
-
+export default () => {
+  const {addTodo} = useContext(TodoContext)
+  
   const [title, setTitle] = useState('');
   const onTitleChange = event => {
     setTitle(event.target.value);
@@ -17,7 +19,7 @@ export default ({addTodo}) => {
     setTitle('');
   }
   return (
-    <form className="todoForm" onSubmit={handelSubmit}>
+    <form className="todoForm" onSubmit={handelSubmit} >
       <input 
         type="text" 
         placeholder="Enter new plan..." 
